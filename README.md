@@ -1,1 +1,1 @@
-# informationmanagement
+# Information Management
