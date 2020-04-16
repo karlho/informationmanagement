@@ -86,3 +86,8 @@
 
     * visit ```http://localhost:8000/catalog/covid19```
 
+| MacOS         | Windows   | 
+|:-------------:|:-------------:| 
+| python3       |python |
+| pip3       |pip |
+| mv            | move |
