@@ -4,13 +4,13 @@
 1. Create an catalog app
     * Create app ``` python manage.py startapp catalog ```
     * visit ```http://127.0.0.1:8000/catalog```
-    * catalog/views.py 
+    * Edit the file catalog/views.py using nano (MacOS) or notepad (Windows): 
     ```python
     from django.http import HttpResponse
     def index(request):
         return HttpResponse("Hello, world. You're at the catalog index.")
     ```
-    * catalog/urls.py
+    * Edit the file catalog/urls.py using nano (MacOS) or notepad (Windows): 
     ```python
    from django.urls import path
    from . import views
@@ -18,7 +18,7 @@
         path('', views.index, name='index'),
    ]
     ```
-   * in the main routing file mysite/urls.py
+   * Edit in the main routing file mysite/urls.py using nano (MacOS) or notepad (Windows): 
    ```python
     from django.contrib import admin
     from django.urls import include, path
