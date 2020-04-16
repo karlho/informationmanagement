@@ -73,3 +73,9 @@
        admin.site.register(Department)
    ```
     * visit ```http://localhost:8000/catalog/dept```
+    
+    | MacOS         | Windows   | 
+|:-------------:|:-------------:| 
+| python3       |python |
+| pip3       |pip |
+| mv            | move |
