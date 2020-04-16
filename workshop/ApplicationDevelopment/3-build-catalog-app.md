@@ -9,6 +9,13 @@
     from django.http import HttpResponse
     def index(request):
         return HttpResponse("Hello, world. You're at the catalog index.")
+    def dept(request):
+    departments = Department.objects.all()
+    template = loader.get_template('catalog/dept.html')
+    context = {
+      'department_list': departments,
+      }
+      return HttpResponse(template.render(context, request))    
     ```
     * Edit the file catalog/urls.py using nano (MacOS) or notepad (Windows): 
     ```python
