@@ -19,7 +19,7 @@
     * In your favorite browser, go to ``` http://127.0.0.1:8000/ ``` 
     * admin ``` http://127.0.0.1:8000/admin ```
 
-| MacOS         | Windows         | 
+| MacOS         | Windows   | 
 |:-------------:|:-------------:| 
-| python3            | python |
+| python3       |python |
 | mv            | move |
