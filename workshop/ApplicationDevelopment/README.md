@@ -1,6 +1,6 @@
 # Application Development
     * User Interface
-    * Application - Business Logic
+    * Business Logic
     * Database - Persistent Data
         * RDBMS - PostgresSQL, MySQL
         * NoSQL - MongoDB, AWS DynamoDB, Apache Cassandra
