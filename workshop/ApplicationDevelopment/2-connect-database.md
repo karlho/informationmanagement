@@ -6,6 +6,13 @@
     
 2. Connect to Database
     * Install python-postgres database engine/connector ``` pip install psycopg2 ```
+
+| MacOS         | Windows   | 
+|:-------------:|:-------------:| 
+| nano mysite/settings.py       |notepad mysite\settings.py |
+
+
+
     * File mysite/settings, find "DATABASES" dictionary, change it to
     ```python      
         DATABASES = {
@@ -19,6 +26,7 @@
             }
         } 
     ```
+    * Be sure to change to your PostgreSQL password
     * Restart Web Server "python manage.py runserver ```
     
 3. ORM ( Object-Relational Mapping )
@@ -31,4 +39,5 @@
 | python3       |python |
 | pip3       |pip |
 | mv            | move |
+| nano            | notepad |
  
