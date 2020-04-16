@@ -23,7 +23,7 @@
         } 
     ```
     * Be sure to change to your PostgreSQL password
-    * Restart Web Server "python manage.py runserver ```
+    * Restart Web Server ```python manage.py runserver ```
     
 3. ORM ( Object-Relational Mapping )
     * Create and apply SQL to database ```python manage.py migrate ```
