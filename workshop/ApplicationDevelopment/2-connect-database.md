@@ -28,6 +28,7 @@
 3. ORM ( Object-Relational Mapping )
     * Create and apply SQL to database ```python manage.py migrate ```
     * Create super user ```python manage.py createsuperuser```
+    * Restart Web Server ```python manage.py runserver ```
     * Inspect Models, visit ``` http://127.0.0.1:8000/admin ``` 
 
 | MacOS         | Windows   | 
