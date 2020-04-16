@@ -9,7 +9,7 @@
       | MacOS         | Windows   | 
       |:-------------:|:-------------:| 
       | nano mysite/settings.py       |notepad mysite\settings.py |
-    * File mysite/settings, find "DATABASES" dictionary, change it to
+    * Edit the file mysite/settings.py using nano (MacOS) or notepad (Windows), find "DATABASES" dictionary, change it to
     ```python      
         DATABASES = {
         'default': {
