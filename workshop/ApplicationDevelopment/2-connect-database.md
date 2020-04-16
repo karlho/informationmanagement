@@ -6,13 +6,9 @@
     
 2. Connect to Database
     * Install python-postgres database engine/connector ``` pip install psycopg2 ```
-
-| MacOS         | Windows   | 
-|:-------------:|:-------------:| 
-| nano mysite/settings.py       |notepad mysite\settings.py |
-
-
-
+      | MacOS         | Windows   | 
+      |:-------------:|:-------------:| 
+      | nano mysite/settings.py       |notepad mysite\settings.py |
     * File mysite/settings, find "DATABASES" dictionary, change it to
     ```python      
         DATABASES = {
