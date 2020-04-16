@@ -26,5 +26,8 @@
     * Create super user ```python manage.py createsuperuser```
     * Inspect Models, visit ``` http://127.0.0.1:8000/admin ``` 
 
-
+| MacOS         | Windows   | 
+|:-------------:|:-------------:| 
+| python3       |python |
+| mv            | move |
  
