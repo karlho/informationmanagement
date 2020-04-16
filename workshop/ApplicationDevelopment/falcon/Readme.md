@@ -5,6 +5,7 @@
 1. Download and install the app for your OS (MacOS, Windows, Linux)
 2. Install the app as administrator (disregard Windows warning)
 3. Connect to your database on local server
+
   ..1. Choose PostgreSQL
   b. Username: postgres
   c. Password: yoursecretpw
