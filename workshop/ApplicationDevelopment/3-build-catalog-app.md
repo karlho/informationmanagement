@@ -4,20 +4,43 @@
 1. Create an catalog app
     * Create app ``` python manage.py startapp catalog ```
     * visit ```http://127.0.0.1:8000/catalog```
-    * Edit the file catalog/views.py using nano (MacOS) or notepad (Windows): 
+    * catalog/views.py
     ```python
     from django.http import HttpResponse
     def index(request):
         return HttpResponse("Hello, world. You're at the catalog index.")
     def dept(request):
-      departments = Department.objects.all()
-      template = loader.get_template('catalog/dept.html')
-      context = {
-         'department_list': departments,
-         }
-      return HttpResponse(template.render(context, request))    
+        departments = Department.objects.all()
+       template = loader.get_template('catalog/dept.html')
+       context = {
+            'department_list': departments,
+        }
+       return HttpResponse(template.render(context, request))   
     ```
-    * Edit the file catalog/urls.py using nano (MacOS) or notepad (Windows): 
+    * catalog/templates/catalog/dept.html
+    ```html
+    {% load static %}
+    
+    <link rel="stylesheet" type="text/css" href="{% static 'catalog/style.css' %}">
+    
+    {% if department_list %}
+        <table ="1">
+    <tr><th>Department</th><th>Building</th></tr>
+        {% for dept in department_list %}
+            <tr>
+                <td>{{ dept.dept_name }}</td>
+                <td>{{ dept.building }}</td>
+            </tr>
+        {% endfor %}
+        </table>
+    {% else %}
+        <p>No Departments are available.</p>
+    {% endif %}
+   
+    ```
+
+
+    * catalog/urls.py
     ```python
    from django.urls import path
    from . import views
@@ -25,11 +48,11 @@
         path('', views.index, name='index'),
    ]
     ```
-   * Edit in the main routing file mysite/urls.py using nano (MacOS) or notepad (Windows): 
+   * in the main routing file mysite/urls.py
    ```python
     from django.contrib import admin
     from django.urls import include, path
-    
+
     urlpatterns = [
         path('catalog/', include('catalog.urls')),
         path('admin/', admin.site.urls),
@@ -41,7 +64,7 @@
     ```python
     from django.urls import path
     from . import views
-    
+
     urlpatterns = [
         path('', views.index, name='index'),
         path('dept', views.dept, name='dept'),
@@ -55,7 +78,7 @@
         dept_name = models.CharField(primary_key=True, max_length=20)
         building = models.CharField(max_length=15, blank=True, null=True)
         budget = models.DecimalField(max_digits=12, decimal_places=2, blank=True, null=True)
-    
+
         class Meta:
             managed = False
             db_table = 'department'
@@ -76,10 +99,11 @@
     ```python
        from django.contrib import admin
        from .models import Department
-     
+
        admin.site.register(Department)
    ```
     * visit ```http://localhost:8000/catalog/dept```
+
 
 
 | MacOS         | Windows   | 
