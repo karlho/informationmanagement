@@ -22,4 +22,5 @@
 | MacOS         | Windows   | 
 |:-------------:|:-------------:| 
 | python3       |python |
+| pip3       |pip |
 | mv            | move |
