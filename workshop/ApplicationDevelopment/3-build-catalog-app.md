@@ -1,10 +1,10 @@
 # [Catalog](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django)
 [MVC]: https://mdn.mozillademos.org/files/13931/basic-django.png "MVC"
 [MVC Flow](https://mdn.mozillademos.org/files/13931/basic-django.png)
-1. Create an catalog app
+1. Create an app named catalog
     * Create app ``` python manage.py startapp catalog ```
     * visit ```http://127.0.0.1:8000/catalog```
-    * catalog/views.py
+    * Edit the file catalog/views.py using nano (MacOS) or notepad (Windows):
     ```python
     
    from django.http import HttpResponse
@@ -22,7 +22,14 @@
         }
        return HttpResponse(template.render(context, request))   
     ```
-    * catalog/templates/catalog/dept.html
+    * Create a page for data output: catalog/templates/catalog/dept.html
+    in catalog directory:
+    - cd catalog
+    - mkdir templates
+    - cd templates
+    - mkdir catalog
+    - Create the file catalog/templates/catalog/dept.html using nano (MacOS) or notepad (Windows):
+   
     ```html
     {% load static %}
     
