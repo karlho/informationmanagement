@@ -11,7 +11,9 @@
     * In terminal press Ctrl-C to stop webserver, restart it with ``` python manage.py runserver```
     
         
-2. Add another page with static image
+2. Add a page with a static image
+   a. Add path
+   
     * catalog/urls.py
     ```python
    from django.urls import path
@@ -21,7 +23,9 @@
        path('static_image', views.static_image, name='static_image'),
    ]
     ```
-    * catalog/views.py
+   b. Add view
+   
+   * catalog/views.py
     ```python
    ...
     def static_image(request):
@@ -30,6 +34,8 @@
         return HttpResponse(template.render(context, request))
     ... 
     ```
+   c. Add the HTML page
+   
    * catalog/template/catalog/static_image.html
    ```python
    {% load static %}
