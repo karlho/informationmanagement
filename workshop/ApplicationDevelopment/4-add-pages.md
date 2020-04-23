@@ -21,6 +21,7 @@
    from . import views
    urlpatterns = [
        path('', views.index, name='index'),
+       path('dept', views.dept, name='dept'),
        path('static_image', views.static_image, name='static_image'),
    ]
     ```
@@ -35,7 +36,7 @@
         return HttpResponse(template.render(context, request))
     ... 
     ```
-   c. Add the HTML page
+   c. Create HTML page
    
    * catalog/template/catalog/static_image.html
    ```python
@@ -43,10 +44,14 @@
    <link rel="stylesheet" type="text/css" href="{% static 'catalog/style.css' %}">
    <img src="{% static "catalog/sars-cov-19.jpg" %}" alt="sars-cov-19">
    ```
-
+   d. Check the page
+   
     * visit ```http://localhost:8000/catalog/static_image```
 
-3. Add another page with Covid-19 charts
+3. Add a plot with live feed data: Covid-19 charts
+
+   a. Add path
+   
     * catalog/urls.py
     ```python
     from django.urls import path
@@ -58,7 +63,9 @@
         path('static_image', views.static_image, name='static_image'),
         path('covid19', views.covid19, name='covid19'),
     ```
-    * catalog/views.py
+   b. Add view
+
+   * catalog/views.py
     ```python
    ...
     def covid19(request):
@@ -82,6 +89,8 @@
         return HttpResponse(template.render(context, request))
     ... 
     ```
+   c. Create HTML page
+   
    * catalog/template/catalog/covid19.html
    ```python
     {% if graph %}
@@ -90,6 +99,7 @@
         <p>No Graph</p>
     {% endif %}
    ```
+   d. Check the page
 
     * visit ```http://localhost:8000/catalog/covid19```
 
