@@ -62,6 +62,7 @@
         path('dept', views.dept, name='dept'),
         path('static_image', views.static_image, name='static_image'),
         path('covid19', views.covid19, name='covid19'),
+    ]
     ```
    b. Add view
 
