@@ -12,6 +12,7 @@
     
         
 2. Add a page with a static image
+
    a. Add path
    
     * catalog/urls.py
