@@ -74,7 +74,10 @@
         graph = None
     
         # chart
+        import json
+        import pandas
         import plotly.express as px
+        import requests
         api_url = 'http://corona-api.com/countries/us?include=timeline'
         api_response = requests.get(api_url)
         api_response_json = json.loads(api_response.text)
