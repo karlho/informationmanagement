@@ -1,4 +1,4 @@
-1. Prerequisites
+1. Prerequisites (Python: requests, pandas, plotly)
     * Server is running ``` http://127.0.0.1:8000/ ``` 
     * Connected to database ``` http://127.0.0.1:8000/admin ```
     * Demo app is running ``` http://localhost:8000/catalog/dept ```
@@ -11,7 +11,7 @@
     * In terminal press Ctrl-C to stop webserver, restart it with ``` python manage.py runserver```
     
         
-2. Add a page with a static image
+2. Add a page with a static image # Be sure to download the image "sars-cov-19.jpg" to epps6354 folder
 
    a. Add path
    
