@@ -38,7 +38,7 @@
     ```
    c. Create HTML page
    
-   * catalog/template/catalog/static_image.html
+   * catalog/templates/catalog/static_image.html
    ```python
    {% load static %}
    <link rel="stylesheet" type="text/css" href="{% static 'catalog/style.css' %}">
