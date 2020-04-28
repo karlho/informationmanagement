@@ -16,11 +16,11 @@
         return HttpResponse("Hello, world. You're at the catalog index.")
     def dept(request):
         departments = Department.objects.all()
-       template = loader.get_template('catalog/dept.html')
-       context = {
+        template = loader.get_template('catalog/dept.html')
+        context = {
             'department_list': departments,
         }
-       return HttpResponse(template.render(context, request))   
+        return HttpResponse(template.render(context, request))   
     ```
     * Create a page for data output: catalog/templates/catalog/dept.html
     in catalog directory:
