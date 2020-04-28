@@ -11,7 +11,7 @@
     * In terminal press Ctrl-C to stop webserver, restart it with ``` python manage.py runserver```
     
         
-2. Add a page with a static image # Be sure to download the image "sars-cov-19.jpg" to epps6354 folder
+2. Add a page with a static image # Be sure to download the image "sars-cov-19.jpg" to /epps6354/catalog/static/catalog folder
 
    a. Add path
    
