@@ -8,7 +8,7 @@
     * (optional) if you're using virtualenv ```source ~/.virtualenvs/django/bin/activate;cd ~/PycharmProjects/EPPS6354```
     * ```python -m pip install Django```
     * ```pip install psycopg2-binary ```
-    * ```python -c 'import django; print(django.get_version())'```
+    * ```python -c "import django; print(django.get_version())"```
     * ```python -m django --version```
 3. Initiate a project [Tutorial](https://docs.djangoproject.com/en/3.0/intro/tutorial01/)
     * Initiate project structure``` django-admin startproject mysite ```
