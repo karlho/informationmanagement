@@ -1,17 +1,18 @@
 1. Prerequisites
-    * PostgresSQL
+    * PostgreSQL
     * pgAdmin
-    * python 3, pip
-    * PyCharm
+    * Anaconda
+    * Python 3.x, pip
+    * PyCharm (optional)
 2. install [Django](https://docs.djangoproject.com/en/3.0/intro/install/)
-    * environment ``` pip -V``
+    * ``` pip -V``` # Check Python package manager available
     * ```python -m venv epps6354``` # Set up virtual environment for project
       * Installation guides
       | [MacOS](https://docs.djangoproject.com/en/3.2/topics/install/)         | [Windows](https://docs.djangoproject.com/en/3.2/howto/windows/)   | 
       
-    * ```python -m pip install Django```
-    * ```pip install psycopg2-binary ```
-    * ```python -m django --version```
+    * ```python -m pip install Django``` # Install Django
+    * ```pip install psycopg2-binary ``` # Install PostgreSQL database adapter
+    * ```python -m django --version```  # Check if Django installed
 3. Initiate a project [Tutorial](https://docs.djangoproject.com/en/3.0/intro/tutorial01/)
     * Initiate project structure``` django-admin startproject mysite ```
     * ``` cd mysite ```
