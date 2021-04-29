@@ -9,7 +9,7 @@
     * ```python -m venv epps6354``` # Set up virtual environment for project
        | MacOS         | Windows   | 
       |:-------------:|:-------------:| 
-      |```epps6354\bin\activate``` | ```epps6354\Scripts\activate.bat```|
+      |```epps6354/bin/activate``` | ```epps6354\Scripts\activate.bat```|
   
       * Installation guides
       | [MacOS](https://docs.djangoproject.com/en/3.2/topics/install/)         | [Windows](https://docs.djangoproject.com/en/3.2/howto/windows/)   | 
