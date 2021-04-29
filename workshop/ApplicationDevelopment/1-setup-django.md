@@ -6,7 +6,7 @@
 2. install [Django](https://docs.djangoproject.com/en/3.0/intro/install/)
     * environment ``` pip -V``
     * ```python -m venv epps6354``` # Set up virtual environment for project
-      ** Installation guides
+      * Installation guides
       | [MacOS](https://docs.djangoproject.com/en/3.2/topics/install/)         | [Windows](https://docs.djangoproject.com/en/3.2/howto/windows/)   | 
       
     * ```python -m pip install Django```
