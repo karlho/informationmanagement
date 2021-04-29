@@ -5,11 +5,11 @@
     * PyCharm
 2. install [Django](https://docs.djangoproject.com/en/3.0/intro/install/)
     * environment ``` pip -V``
-
- | MacOS         | Windows   | 
+      | MacOS         | Windows   | 
       |:-------------:|:-------------:| 
       | python -m pip install Django     |py -m venv epps6354 |
       |                                  |py -m pip install Django |
+
     * (optional) if you're using virtualenv ```source ~/.virtualenvs/django/bin/activate;cd ~/PycharmProjects/EPPS6354```
     * ```python -m pip install Django```
     * ```pip install psycopg2-binary ```
