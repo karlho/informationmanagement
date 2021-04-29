@@ -9,7 +9,9 @@
       | MacOS         | Windows   | 
       |:-------------:|:-------------:| 
       | nano mysite/settings.py       |notepad mysite\settings.py |
-    * Edit the file mysite/settings.py using nano (MacOS) or notepad (Windows), find "DATABASES" dictionary, change it to
+    * Edit the file mysite/settings.py using nano (MacOS) or notepad (Windows)
+      * You can use your favorite editor and find the file in Finder (Mac) or File Explorer (Windows)   
+    * Once you open the file, find "DATABASES" dictionary, use copy and paste and change it to:
     ```python      
         DATABASES = {
         'default': {
@@ -26,15 +28,10 @@
     * Restart Web Server ```python manage.py runserver ```
     
 3. ORM ( Object-Relational Mapping )
+    * Stop Django server
     * Create and apply SQL to database ```python manage.py migrate ```
     * Create super user ```python manage.py createsuperuser```
     * Restart Web Server ```python manage.py runserver ```
-    * Inspect Models, visit ``` http://127.0.0.1:8000/admin ``` 
+    * Inspect Models, visit ``` http://127.0.0.1:8000/admin ```
+    * Login using your superuser credentials 
 
-| MacOS         | Windows   | 
-|:-------------:|:-------------:| 
-| python3       |python |
-| pip3       |pip |
-| mv            | move |
-| nano            | notepad |
- 
