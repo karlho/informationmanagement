@@ -3,7 +3,7 @@
 [MVC Flow](https://mdn.mozillademos.org/files/13931/basic-django.png)
 1. Create an app named catalog
     * Create app ``` python manage.py startapp catalog ```
-    * visit ```http://127.0.0.1:8000/catalog```
+    * Check ```cd mysite``` and look for catalog folder/directory
     * Edit the file catalog/views.py using nano (MacOS) or notepad (Windows):
     ```python
     
@@ -117,10 +117,3 @@
     * visit ```http://localhost:8000/catalog/dept```
 
 
-
-| MacOS         | Windows   | 
-|:-------------:|:-------------:| 
-| python3       |python |
-| pip3       |pip |
-| mv            | move |
-| nano            | notepad |
