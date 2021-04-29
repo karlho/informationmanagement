@@ -4,7 +4,12 @@
 1. Create an app named catalog
     * Create app ``` python manage.py startapp catalog ```
     * Check ```cd mysite``` and look for catalog folder/directory
-    * Edit the file catalog/views.py using nano (MacOS) or notepad (Windows):
+    * Edit the file views.py in catalog using nano (MacOS) or notepad (Windows) (Note the different dashes in different OS's:
+
+| MacOS         | Windows   | 
+      |:-------------:|:-------------:| 
+      | nano catalog/views.py       |notepad catalog\views.py |
+    * Paste the following to the end of the views.py file  
     ```python
     
    from django.http import HttpResponse
@@ -28,8 +33,15 @@
     - mkdir templates
     - cd templates
     - mkdir catalog
+    - cd catalog
+    - mkdir catalog # Note this is another catalog folder/directory
     - Create the file catalog/templates/catalog/dept.html using nano (MacOS) or notepad (Windows):
-   
+| MacOS         | Windows   | 
+      |:-------------:|:-------------:| 
+      | nano dept.html      |notepad dept.html|
+    * Create the new file  
+    * Paste the following to the dept.html file 
+       
     ```html
     {% load static %}
     
@@ -50,17 +62,28 @@
     {% endif %}
    
     ```
+   * Create a urls.py file in catalog folder/directory
+   | MacOS         | Windows   | 
+      |:-------------:|:-------------:| 
+      | nano mysite/catalog/urls.py      |notepad mysite\catalog\urls.py|
+   * Paste the following to the dept.html file 
+       
 
-
-    * catalog/urls.py
-    ```python
+   ```python
    from django.urls import path
    from . import views
    urlpatterns = [
         path('', views.index, name='index'),
    ]
     ```
-   * in the main routing file mysite/urls.py
+   
+   * Change to mysite directory
+   * ``` cd ..```
+   * Edit the main routing file mysite/urls.py
+   | MacOS         | Windows   | 
+      |:-------------:|:-------------:| 
+      | nano mysite/urls.py      |notepad mysite\urls.py|
+  
    ```python
     from django.contrib import admin
     from django.urls import include, path
@@ -70,7 +93,7 @@
         path('admin/', admin.site.urls),
     ]
     ```
-   * In terminal press Ctrl-C to stop webserver, restart it with ``` python manage.py runserver```
+   * In terminal, make sure you stop the webserver (press Ctrl-C to stop), restart it with ``` python manage.py runserver```
 2. List Departments
     * catalog/urls.py
     ```python
