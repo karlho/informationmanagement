@@ -6,10 +6,10 @@
     * PyCharm (optional)
 2. install [Django](https://docs.djangoproject.com/en/3.0/intro/install/)
     * ``` pip -V``` # Check Python package manager available
-    * ```python -m venv mysite``` # Set up virtual environment for project
+    * ```python -m venv epps6354``` # Set up virtual environment for project
        | MacOS         | Windows   | 
       |:-------------:|:-------------:| 
-      |```mysite\bin\activate``` | ```mysite\Scripts\activate.bat```|
+      |```epps6354\bin\activate``` | ```epps6354\Scripts\activate.bat```|
   
       * Installation guides
       | [MacOS](https://docs.djangoproject.com/en/3.2/topics/install/)         | [Windows](https://docs.djangoproject.com/en/3.2/howto/windows/)   | 
