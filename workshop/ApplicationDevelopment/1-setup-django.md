@@ -12,8 +12,7 @@
     * ```python -m django --version```
 3. Initiate a project [Tutorial](https://docs.djangoproject.com/en/3.0/intro/tutorial01/)
     * Initiate project structure``` django-admin startproject mysite ```
-    * Change project name ``` mv mysite epps6354  ```
-    * 
+    * Change project name ``` mv mysite epps6354  ``` (Windows move mysite epps6354)
     * ``` cd epps6354 ```
     * Run Webserver ``` python manage.py runserver ```
     * In your favorite browser, go to ``` http://127.0.0.1:8000/ ``` 
