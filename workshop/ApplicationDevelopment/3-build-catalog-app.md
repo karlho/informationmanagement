@@ -32,8 +32,7 @@
     - mkdir templates
     - cd templates
     - mkdir catalog
-    - cd catalog
-    - mkdir catalog # Note this is another catalog folder/directory
+    - cd catalog # Note this is another catalog folder/directory
     - Create the file catalog/templates/catalog/dept.html using nano (MacOS) or notepad (Windows):
 | MacOS         | Windows   | 
       |:-------------:|:-------------:| 
