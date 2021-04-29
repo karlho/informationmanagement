@@ -65,7 +65,7 @@
    | MacOS         | Windows   | 
       |:-------------:|:-------------:| 
       | nano mysite/catalog/urls.py      |notepad mysite\catalog\urls.py|
-   * Paste the following to the dept.html file 
+   * Paste the following to the urls.py file 
        
 
    ```python
