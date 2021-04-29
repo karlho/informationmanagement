@@ -5,8 +5,7 @@
     * Create app ``` python manage.py startapp catalog ```
     * Check ```cd mysite``` and look for catalog folder/directory
     * Edit the file views.py in catalog using nano (MacOS) or notepad (Windows) (Note the different dashes in different OS's:
-
-| MacOS         | Windows   | 
+      | MacOS         | Windows   | 
       |:-------------:|:-------------:| 
       | nano catalog/views.py       |notepad catalog\views.py |
     * Paste the following to the end of the views.py file  
