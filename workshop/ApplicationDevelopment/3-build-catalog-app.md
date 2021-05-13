@@ -78,9 +78,10 @@
    * Change to mysite directory
    * ``` cd ..```
    * Edit the main routing file mysite/urls.py
+   ** full path Mac: mysite/mysite/urls.py. | Windows mysite\mysite\urls.py
    | MacOS         | Windows   | 
       |:-------------:|:-------------:| 
-      | nano mysite/urls.py      |notepad mysite\urls.py|
+      | nano urls.py      |notepad  urls.py|
   
    ```python
     from django.contrib import admin
