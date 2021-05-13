@@ -94,7 +94,8 @@
     ```
    * In terminal, make sure you stop the webserver (press Ctrl-C to stop), restart it with ``` python manage.py runserver```
 2. List Departments
-    * catalog/urls.py
+    * Edit catalog/urls.py
+    * Full path: Mac: mysite/catalog/urls.py | Windows mysite\catalog\urls.py
     ```python
     from django.urls import path
     from . import views
@@ -104,7 +105,8 @@
         path('dept', views.dept, name='dept'),
     ]
     ```
-    * catalog/models.py
+    * Edit catalog/models.py
+    * Full path: Mac: mysite/catalog/models.py | Windows mysite\catalog\models.py
     ```python
     from django.db import models
 
@@ -117,7 +119,8 @@
             managed = False
             db_table = 'department'
     ```
-    * mysite/settings.py
+    * Edit mysite/settings.py
+    * Full path: Mac: mysite/mysite/settings.py | Windows mysite\mysite\settings.py
     ```python
     INSTALLED_APPS = [
         'catalog.apps.CatalogConfig',
@@ -129,7 +132,8 @@
         'django.contrib.staticfiles',
     ]
    ```
-    * catalog/admin.py
+    * Edit catalog/admin.py
+    * Full path: Mac: mysite/catalog/admin.py | Windows mysite\catalog\admin.py
     ```python
        from django.contrib import admin
        from .models import Department
