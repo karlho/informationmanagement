@@ -19,7 +19,7 @@
     * ```python -m django --version```  # Check if Django installed
 3. Initiate a project [Tutorial](https://docs.djangoproject.com/en/3.0/intro/tutorial01/)
     * Initiate project structure``` django-admin startproject mysite ```
-    * ``` cd mysite ```
+    * ``` cd mysite ``` (check if manage.py is in the folder/directory)
     * Run Webserver ``` python manage.py runserver ```
     * In your favorite browser, go to ``` http://127.0.0.1:8000/ ``` 
     * admin ``` http://127.0.0.1:8000/admin ```
